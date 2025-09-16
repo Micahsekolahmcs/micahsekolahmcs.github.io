@@ -1,98 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Name — Profile</title>
   <style>
+    /* Base styling */
+    :root {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --accent-color: #00bcd4;
+      --section-bg: #1e1e1e;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       line-height: 1.6;
-      color: #333;
     }
+
+    /* Hero section */
     .hero {
-      position: relative;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
       height: 60vh;
-      background: url('hero.jpg') center center / cover no-repeat;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      color: white;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     }
+
     .hero h1 {
       font-size: 3rem;
       margin: 0;
     }
+
     .hero p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
+
+    /* Content Sections */
     .content {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
+
     .section {
+      background-color: var(--section-bg);
+      padding: 2rem;
+      border-radius: 8px;
       margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
+
     .section h2 {
-      border-bottom: 2px solid #ddd;
+      color: var(--accent-color);
+      border-bottom: 1px solid #333;
       padding-bottom: 0.5rem;
     }
+
+    .section ul {
+      list-style: square;
+      padding-left: 1.2rem;
+    }
+
+    /* Contact Section */
     .contact {
       text-align: center;
       padding: 2rem;
-      background: #f5f5f5;
+      background: #0d0d0d;
     }
+
+    .contact h2 {
+      color: var(--accent-color);
+    }
+
     .contact a {
-      color: #0066cc;
+      color: var(--accent-color);
       text-decoration: none;
       margin: 0 1rem;
+      transition: color 0.3s;
     }
+
+    .contact a:hover {
+      color: #ffffff;
+    }
+
+    /* Responsive */
     @media (max-width: 600px) {
       .hero h1 {
         font-size: 2rem;
       }
       .hero p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
 
+  <!-- Hero Section -->
   <header class="hero">
-    <div>
-      <h1>Your Name</h1>
-      <p>Your Title / What You Do</p>
-    </div>
+    <h1>Your Name</h1>
+    <p>Your Role / Title</p>
   </header>
 
+  <!-- About -->
   <section class="content section" id="about">
     <h2>About Me</h2>
-    <p>Write a few lines about yourself: your background, skills, interests. You can even insert a small picture here.</p>
+    <p>Hello! I'm a passionate [your role] with experience in [your skills]. I enjoy building solutions and learning new technologies. In my spare time, I love [your hobbies].</p>
   </section>
 
+  <!-- Skills -->
   <section class="content section" id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Skill One</li>
-      <li>Skill Two</li>
-      <li>Skill Three</li>
+      <li>HTML / CSS / JavaScript</li>
+      <li>React / Node.js</li>
+      <li>Python / Flask / Django</li>
+      <li>Git / GitHub</li>
     </ul>
   </section>
 
+  <!-- Projects -->
   <section class="content section" id="projects">
     <h2>Projects</h2>
-    <p>Describe 2‑3 of your projects, maybe with links or images.</p>
+    <p><strong>Portfolio Website:</strong> A responsive portfolio site to showcase my work.</p>
+    <p><strong>Task Tracker App:</strong> A web app built with React for tracking daily tasks.</p>
+    <p><strong>Blog Platform:</strong> A blog system using Django with user authentication.</p>
   </section>
 
+  <!-- Contact -->
   <section class="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
     <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>Social: <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a></p>
+    <p>
+      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a> |
+      <a href="#">Twitter</a>
+    </p>
   </section>
 
 </body>
