@@ -1,6 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    .hero {
+      position: relative;
+      height: 60vh;
+      background: url('hero.jpg') center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.5rem;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .contact {
+      text-align: center;
+      padding: 2rem;
+      background: #f5f5f5;
+    }
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
 <body>
-<h1> My testing website</h1>
+
+  <header class="hero">
+    <div>
+      <h1>Your Name</h1>
+      <p>Your Title / What You Do</p>
+    </div>
+  </header>
+
+  <section class="content section" id="about">
+    <h2>About Me</h2>
+    <p>Write a few lines about yourself: your background, skills, interests. You can even insert a small picture here.</p>
+  </section>
+
+  <section class="content section" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Skill One</li>
+      <li>Skill Two</li>
+      <li>Skill Three</li>
+    </ul>
+  </section>
+
+  <section class="content section" id="projects">
+    <h2>Projects</h2>
+    <p>Describe 2‑3 of your projects, maybe with links or images.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>Social: <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a></p>
+  </section>
+
 </body>
 </html>
